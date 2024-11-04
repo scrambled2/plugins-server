@@ -5,4 +5,5 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   clean: true,
+  external: ['mongodb'], // Exclude 'mongodb' from the bundle
 });

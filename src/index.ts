@@ -1,5 +1,8 @@
 import { env } from '@/common/utils/envConfig';
 import { app, logger } from '@/server';
+import mongodbQuery from './mongodbQuery';
+
+app.use('/mongodb', mongodbQuery);
 
 const port = env.PORT;
 
